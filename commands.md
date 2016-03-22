@@ -19,7 +19,7 @@ git add -A .
 git rm '*.txt'
 git rm -r *foldername*
 
-#Auto remove deleted files with commit (if deleted without using rm)
+##Auto remove deleted files with commit (if deleted without using rm)
 git commit -am "delete stuff"
 
 ##Reset staging area - remove a file or files from the staging area
