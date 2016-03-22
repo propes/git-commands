@@ -1,56 +1,56 @@
-##Git Commands
+#Git Commands
 
-#Create repo in pwd
+##Create repo in pwd
 git init
 
-#Print status
+##Print status
 git status
 
-#Add file/s to staging area
+##Add file/s to staging area
 git add octocat.txt
 git add '*.txt'
 
 **Note: the quotes are necessary to prevent the shell from capturing the wildcard and only searching within the current directory**
 
-#Add all to the staging area
+##Add all to the staging area
 git add -A .
 
-#Reset staging area - remove a file or files from the staging area
+##Reset staging area - remove a file or files from the staging area
 git reset *filename*
 
-#Commit to repo
+##Commit to repo
 git commit -m "Add cute octocat story"
 
-#Print log of commits
+##Print log of commits
 git log
 git log --summary - shows more information about each commit
 
 
-#Add a remote repo
+##Add a remote repo
 git remote add origin https://github.com/try-git/try_git.git
 
 **Note: origin is the name of the remote repo (origin is a typical name for the main one)**
 
-#Pushing to remote repo
+##Pushing to remote repo
 git push -u origin master
 
 **Note: -u tells Git to remember the parameters so that next time you can simply run git push**
 
-#Pull changes from remote repo
+##Pull changes from remote repo
 git pull origin master
 
-#Compare pwd to local repo
+##Compare pwd to local repo
 git diff HEAD
 
 **Note: HEAD is a pointer to the most recent commit. Othewise you have to use the SHA reference**
 
-#Compare staged files to local repo
+##Compare staged files to local repo
 git diff --staged
 
-#Undo (get rid of all changes since last commit for octocat.txt)
+##Undo (get rid of all changes since last commit for octocat.txt)
 git checkout -- octocat.txt
 
-#Git stash
+##Git stash
 sometimes when you go to pull you may have changes you don't want to commit just yet. One option you have, other than commiting, is to stash the changes.
 
 Us the command 'git stash' to stash your changes and 'git stash apply' to re-apply your changes after your pull.
