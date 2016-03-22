@@ -75,7 +75,7 @@ git checkout mybranch
 git checkout -b mybranch
 
 ##Merging branches into master
-###Switch back to mast
+###Switch back to master
 git checkout master
 
 ###Merge the branch into master
