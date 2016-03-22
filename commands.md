@@ -15,6 +15,13 @@ git add '*.txt'
 ##Add all to the staging area
 git add -A .
 
+##Delete files and stage their removal
+git rm '*.txt'
+git rm -r *foldername*
+
+#Auto remove deleted files with commit (if deleted without using rm)
+git commit -am "delete stuff"
+
 ##Reset staging area - remove a file or files from the staging area
 git reset *filename*
 
@@ -23,7 +30,7 @@ git commit -m "Add cute octocat story"
 
 ##Print log of commits
 git log
-git log --summary - shows more information about each commit
+git log --summary *(shows more information about each commit)*
 
 
 ##Add a remote repo
@@ -39,6 +46,11 @@ git push -u origin master
 ##Pull changes from remote repo
 git pull origin master
 
+##Git stash
+sometimes when you go to pull you may have changes you don't want to commit just yet. One option you have, other than commiting, is to stash the changes.
+
+Us the command 'git stash' to stash your changes and 'git stash apply' to re-apply your changes after your pull.
+
 ##Compare pwd to local repo
 git diff HEAD
 
@@ -50,7 +62,26 @@ git diff --staged
 ##Undo (get rid of all changes since last commit for octocat.txt)
 git checkout -- octocat.txt
 
-##Git stash
-sometimes when you go to pull you may have changes you don't want to commit just yet. One option you have, other than commiting, is to stash the changes.
+##Creating a branch
+git branch mybranch
 
-Us the command 'git stash' to stash your changes and 'git stash apply' to re-apply your changes after your pull.
+##Print branches
+git branch
+
+##Switch to a branch
+git checkout mybranch
+
+##Create and checkout branch at same time
+git checkout -b mybranch
+
+##Merging branches into master
+###Switch back to mast
+git checkout master
+
+###Merge the branch into master
+git merge mybranch
+
+##Delete a branch
+git branch -d mybranch
+git branch -D mybranch *or* git branch -d -f mybranch  *(for branches that haven't been merged)*
+
