@@ -24,8 +24,13 @@
 `git rm '*.txt'`
 `git rm -r *foldername*`
 
+<<<<<<< HEAD
 #Auto remove deleted files with commit (if deleted without using rm)
 `git commit -am "delete stuff"`
+=======
+##Auto remove deleted files with commit (if deleted without using rm)
+git commit -am "delete stuff"
+>>>>>>> ded461be05d407e3fe5daba547f949db92683058
 
 ##Reset staging area - remove a file or files from the staging area
 `git reset *filename*`
