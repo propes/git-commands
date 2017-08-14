@@ -24,13 +24,8 @@
 `git rm '*.txt'`
 `git rm -r *foldername*`
 
-<<<<<<< HEAD
 #Auto remove deleted files with commit (if deleted without using rm)
 `git commit -am "delete stuff"`
-=======
-##Auto remove deleted files with commit (if deleted without using rm)
-git commit -am "delete stuff"
->>>>>>> ded461be05d407e3fe5daba547f949db92683058
 
 ##Reset staging area - remove a file or files from the staging area
 `git reset *filename*`
@@ -90,6 +85,9 @@ Us the command 'git stash' to stash your changes and 'git stash apply' to re-app
 
 ###Merge the branch into master
 `git merge mybranch`
+
+###Conflict resolution / Merge conflicts
+`git mergetool`
 
 ##Delete a branch
 `git branch -d mybranch`
